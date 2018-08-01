@@ -1,0 +1,13 @@
+create transfe inquiry 
+field yang tidak ikut 
+- stan 
+- transdatetime
+- localdatetime
+
+transfer field yang tidak ikut 
+{
+-stan
+-transdatetime
+-localdatetime
+
+}

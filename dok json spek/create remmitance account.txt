@@ -1,0 +1,17 @@
+json createRemitance Account 
+
+{
+"id": "must unique every request ", 
+"AccountID":"Account ID of the sender",
+"Name" : "Name of the sender.",
+"Address" : "Address of the sender.",
+"BirthDate":"BirthDate of the sender data ,Format : YYYYMMDD",
+"PhoneNumber":"PhoneNumber of the sender data",
+"Occupation":"Occupation",
+"Citizenship":"Citizenship",
+"IDNumber":"IDNumber",
+"FundResource":"FundResource",
+"RegencyCode"  : "RegencyCode",
+}
+
+json response 

@@ -1,0 +1,213 @@
+json createRemitance Account 
+http://localhost:9001/createAccount
+=====================================
+{
+"id": "must unique every request ", 
+"AccountID":"Account ID of the sender",
+"Name" : "Name of the sender.",
+"Address" : "Address of the sender.",
+"BirthDate":"BirthDate of the sender data ,Format : YYYYMMDD",
+"PhoneNumber":"PhoneNumber of the sender data",
+"Occupation":"Occupation",
+"Citizenship":"Citizenship",
+"IDNumber":"IDNumber",
+"FundResource":"FundResource",
+"RegencyCode"  : "RegencyCode",
+
+// change spek in json 
+{
+"id" : "4",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+}
+=====================================
+json response createremmitanceaccount
+======================================
+{
+    "senderAddress": "Namesender",
+    "senderPhoneNumber": "sendderPhoneNumbersender",
+    "benefRelationship": "Acc02acco1Relationship",
+    "benefName": "Acc01benefName",
+    "benefAccountID": "Acc01benefAccountID",
+    "trxTransDateTime": "trxTransDateTime",
+    "senderName": "Namesender",
+    "trxSTAN": "trxSTAN",
+    "senderEmail": "senderEmailsender",
+    "benefRegencyCode": "Acc01benefRegencyCode",
+    "senderCountryCode": "senderCountryCodesender",
+    "senderBirthDate": "senderBirthDatesender",
+    "benefIDNumberr1": "Acc02acco1ProvCode",
+    "Data": "ini signature ",
+    "benefProvCode": "Acc01benefProvCode",
+    "ErrDescription": "Description kode",
+    "senderAccountID": "senderAccountID",
+    "senderCitizenship": "senderCitizenshipsender",
+    "ErrCode": "Code contoh 00",
+    "trxInstID": "trxInstID",
+    "senderIDNumber": "senderIDNumbersender",
+    "benefInstID": "Acc01benefInstID",
+    "benefAddresss1": "Acc01benefAddress",
+    "senderOccupation": "senderOccupationsender",
+    "senderFundResource": "senderFundResourcesender"
+}
+
+=========================================
+create transfer inquiry 
+url : http://localhost:9001/transferInquiry
+=========================================
+{
+"id":"must unique every request ",
+"instid" : "instid",
+"ProcCode" : "ProcCode",
+"RefNumber":"RefNumber",
+"TerminalID" : "TerminalID",
+"CountryCode" : "CountryCode",
+"senderAccountID": "senderAccountID",
+"senderName": "senderName",
+"senderCurrCode" : "senderCurrCode",
+"senderAmount" : "senderAmount",
+"senderRate":"senderRate",
+"senderAreaCode" : "senderAreaCode",
+"benefInstID":"benefInstID",
+"benefAccountID":"benefAccountID",
+"benefCurrCode": "benefCurrCode",
+"benefAmount": "benefAmount",
+"benefCustRefNumber": "benefCustRefNumber",
+"benefRegencyCode":"benefRegencyCode",
+"benefPurposeCode":"benefPurposeCode",
+"benefPurposeDesc" :"benefPurposeDesc"
+}
+===========================================
+response transfer inquiry
+===========================================
+{
+    "senderRate": "SenderDataRate",
+    "senderAmount": "SenderDataAmount",
+    "Description": "Description sukses",
+    "benefName": "BeneficiaryDataName",
+    "CurrCode": "SenderDataCurrCode",
+    "benefCustRefNumber": "BeneficiaryDataCustRefNumber",
+    "Data": "ini signature ",
+    "benefAccountID": "BeneficiaryDataAccountID",
+    "benefPurposeCode": "BeneficiaryDataPurposeCode",
+    "Code": "Code contoh 00",
+    "trxTransDateTime": "TransDateTime",
+    "senderAccountID": "SenderDataAccountID",
+    "trxInstID": "InstID",
+    "senderName": "SenderDataName",
+    "benefCurrCode": "BeneficiaryDataCurrCode",
+    "trxSTAN": "STAN",
+    "benefPurposeDesc": "BeneficiaryDataPurposeDesc",
+    "benefInstID": "BeneficiaryDataInstID",
+    "benefRegencyCode": "BeneficiaryDataRegencyCode",
+    "senderAreaCode": "SenderDataAreaCode",
+    "benefAmount": "BeneficiaryDataAmount"
+}
+
+============================================
+transfer 
+url : http://localhost:9001/transfer
+============================================
+{
+"id": "must unique every request ",
+"InstID" : "InstID",
+"ProcCode" : "ProcCode",
+"ChannelType" : "ChannelType",
+"RefNumber":"RefNumber",
+"TerminalID" :"TerminalID",
+"CountryCode":"CountryCode",
+"LocalDateTime" : "LocalDateTime",
+"senderAccountID" : "senderAccountID",
+"senderName" :"senderName",
+"senderCurrCode" : "senderCurrCode",
+"senderAmount" : "senderAmount",
+"senderRate" : "senderRate",
+"senderAreaCode" :"senderAreaCode",
+"benefInstID" : "benefInstID",
+"benefAccountID" : "benefAccountID",
+"benefCurrCode" : "benefCurrCode",
+"benefAmount": "benefAmount", 
+"benefCustRefNumber" : "benefCustRefNumber",
+"benefName" : "benefName",
+"benefRegencyCode" : "benefRegencyCode",
+"benefPurposeCode" : "benefPurposeCode",
+"benefPurposeDesc" : "benefPurposeDesc"
+}
+=============================================
+response transfer
+=============================================
+{
+    "senderRate": "SenderDataRate",
+    "senderAmount": "SenderDataAmount",
+    "Description": "Description suksess",
+    "benefName": "BeneficiaryDataName",
+    "CurrCode": "SenderDataCurrCode",
+    "benefCustRefNumber": "BeneficiaryDataCustRefNumber",
+    "Data": "this is sampel of signaature",
+    "benefAccountID": "BeneficiaryDataAccountID",
+    "benefPurposeCode": "BeneficiaryDataAreaCode",
+    "Code": "Code example 00",
+    "trxTransDateTime": "TransDateTime",
+    "senderAccountID": "SenderDataAccountID",
+    "trxInstID": "InstID",
+    "senderName": "SenderDataName",
+    "benefCurrCode": "BeneficiaryDataCurrCode",
+    "trxSTAN": "STAN",
+    "benefPurposeDesc": "BeneficiaryDataPurposeDescription",
+    "benefInstID": "BeneficiaryDataInstID",
+    "benefRegencyCode": "BeneficiaryDataRegencyCode",
+    "senderAreaCode": "SenderDataAreaCode",
+    "benefAmount": "BeneficiaryDataAmount"
+}
+==================================================
+inquiry status request 
+http://localhost:9001/InquiryStatus
+=================================================
+{
+"id":"must unique every request ",
+"InstID":"InstID",
+"CountryCode":"CountryCode",
+"querySTAN" :"querySTAN",
+"queryTransDateTime": "queryTransDateTime ",
+
+}
+===============================================
+inquiry status response 
+===============================================
+{
+    "signData": "SignatureData",
+    "trfAmount": "SenderDataAmount",
+    "trfAccountID": "SenderDataAccountID",
+    "benefName": "BeneficiaryDataName",
+    "respDescription": "ResponseDescription",
+    "benefCustRefNumber": "BeneficiaryDataCustRefNumber",
+    "benefAccountID": "BeneficiaryDataAccountID",
+    "trfDescription": "ResponseDescription",
+    "benefAccoutID": "BeneficiaryDataInstID",
+    "trfCode": "ResponseCode",
+    "trxTransDateTime": "TransactionIDTransDateTime",
+    "trfName": "SenderDataName",
+    "trxInstID": "TransactionIDInstID",
+    "benefCurrCode": "BeneficiaryDataCurrCode",
+    "trxSTAN": "000096",
+    "trfCurrCode": "SenderDataCurrCode",
+    "trfRate": "SenderDataRate",
+    "querySTAN": "QueryTransactionIDSTAN",
+    "benefRegencyCode": "BeneficiaryDataRegencyCode",
+    "queryTransDateTime": "QueryTransactionIDTransDateTime",
+    "benefAmount": "BeneficiaryDataAmount",
+    "respCode": "ResponseCode"
+}

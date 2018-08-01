@@ -1,0 +1,28 @@
+create remmitance account request 
+
+{
+"id" : "39",
+"AccountID":"123",
+"Name":"Name of the sender.",
+"Address" : "Address of the sender.",
+"BirthDate":"1993-01-06",
+"PhoneNumber":"0856787576",
+"Occupation":"Occupation",
+"Citizenship":"Citizenship",
+"IDNumber":"IDNumber",
+"FundResource":"FundResource",
+"RegencyCode"  : "RegencyCode"
+}
+
+create remmitance account response 
+
+
+Rdp alamatnya 218.255.230.38:1879
+
+
+User name : administrator
+
+Password : Sje3622
+
+
+sje3622

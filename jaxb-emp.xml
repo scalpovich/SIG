@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Return>
+    <type>respaymentcode</type>
+    <ack>01</ack>
+    <bookingid>123456789</bookingid>
+    <vaid>500888299405</vaid>
+    <bankcode>987</bankcode>
+    <amount>13500000000</amount>
+    <signature>620427300f3d53d393c97ec9a1e34fa83af7b6c9a6045eff40cd51b9f9c1d1bd</signature>
+</Return>

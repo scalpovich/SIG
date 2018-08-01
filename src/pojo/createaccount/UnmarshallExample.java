@@ -31,11 +31,11 @@ public class UnmarshallExample {
         for(SenderData send : pojo.getSenderData()){
             System.out.println("FundResource" + send.getFundResource());
         }
-        
-        List<BeneficiaryData> list = pojo.getBenefData();
-        for(AccO1 acc : list){
-            
-        }
+//        
+//        List<BeneficiaryData> list = pojo.getBenefData();
+//        for(AccO1 acc : list){
+//            
+//        }
     }
     
 }

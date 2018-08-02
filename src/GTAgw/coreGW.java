@@ -40,8 +40,8 @@ public class coreGW {
 
         HttpServer server = HttpServer.create(new InetSocketAddress(Integer.parseInt(HttpPort)), 0); 
         server.createContext("/createAccount", new CreateAccountEnhance());  
-         server.createContext("/transferInquiry", new TransferInquiry()); 
-         server.createContext("/transfer", new Transfer()); 
+         server.createContext("/transferInquiry", new TransferInquiryEnhance()); 
+         server.createContext("/transfer", new TransferEnhance()); 
          server.createContext("/InquiryStatus", new InquiryStatus());
         server.setExecutor(null); // creates a default executor
         server.start();

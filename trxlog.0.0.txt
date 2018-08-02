@@ -6364,3 +6364,93 @@ INFO: Incoming Notify message from handler - {
 "BenefAccountId":"001001",
 "BenefInstId":"003"
 }
+Aug 02, 2018 3:26:26 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "7",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 02, 2018 3:26:52 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "7",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 02, 2018 3:37:13 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "7",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 02, 2018 3:39:50 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "7",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 02, 2018 3:41:57 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "7",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}

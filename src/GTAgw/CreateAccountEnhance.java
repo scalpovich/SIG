@@ -257,10 +257,11 @@ public class CreateAccountEnhance implements HttpHandler{
         } catch (Exception e) {
             //  t.sendResponseHeaders(200, response.length());
             e.printStackTrace();
-        t.sendResponseHeaders(400, response.length());
-        OutputStream os = t.getResponseBody();
-        os.write(e.toString().getBytes());
-        os.close();
+            String errorResp = UtilRemiitance.responseError("upps something error happen check console");
+            t.sendResponseHeaders(200, errorResp.length());
+            OutputStream os = t.getResponseBody();
+            os.write(errorResp.toString().getBytes());
+            os.close();
         }
         
 

@@ -129,6 +129,17 @@ public class UtilRemiitance {
         return xml;
     }
     
+    public static String responseError(String message) throws IOException{
+        JSONObject obj = new JSONObject();
+        obj.put("error", message);
+        
+        StringWriter out = new StringWriter();
+        obj.writeJSONString(out);
+
+        String jsonText = out.toString();
+        return jsonText;
+        
+    }
  
     public static String responseCreateAccount(String trxSTAN, String trxTransDateTime, String trxInstID,
             String senderAccountID, String senderName,String senderAddress,String senderCountryCode ,String senderBirthDate, 
@@ -256,8 +267,6 @@ public class UtilRemiitance {
         obj.put("Code", Code);
         obj.put("Description", Description);
         obj.put("Data", Data);
-       
-       
 
         StringWriter out = new StringWriter();
         obj.writeJSONString(out);

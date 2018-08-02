@@ -42,7 +42,7 @@ public class coreGW {
         server.createContext("/createAccount", new CreateAccountEnhance());  
          server.createContext("/transferInquiry", new TransferInquiryEnhance()); 
          server.createContext("/transfer", new TransferEnhance()); 
-         server.createContext("/InquiryStatus", new InquiryStatus());
+         server.createContext("/InquiryStatus", new InquiryStatusEnhance());
         server.setExecutor(null); // creates a default executor
         server.start();
         System.out.println("Application Is Starting ");

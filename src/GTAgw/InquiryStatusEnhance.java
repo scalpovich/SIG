@@ -79,7 +79,7 @@ class InquiryStatusEnhance implements HttpHandler {
                 buf.append((char) b);
             }
             String input = buf.toString();
-            System.out.println(input);
+
             JSONObject obj = new JSONObject(input);
             log.sendtoLog(Level.INFO, "Incoming inquiry status message", input);
             String id = obj.getString("id");

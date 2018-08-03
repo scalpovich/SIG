@@ -63,8 +63,8 @@ public class CreateAccountEnhance implements HttpHandler{
     @Override
     public void handle(HttpExchange t) throws IOException{
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-      //  String url = ApplicationProperties.getUrlRemmitance();
-        String url = "http://localhost:5000/api";
+        String url = ApplicationProperties.getUrlRemmitance();
+       // String url = "http://localhost:5000/api";
         
         UtilRemiitance ur = new UtilRemiitance();
 
@@ -102,7 +102,8 @@ public class CreateAccountEnhance implements HttpHandler{
             String stan1 = jdbcRemmitance.selectStan(id);
             String stan = ur.createStanGenerator(stan1);
             //create signature 
-            String Data = UtilRemiitance.signatureCreateAccount(stan, TransDateTime, InstID, AccountID, Name, Address, PhoneNumber, IDNumber);
+            String Data = UtilRemiitance.signatureCreateAccount(stan, TransDateTime, 
+                    InstID, AccountID, Name, Address, PhoneNumber, IDNumber,BenefAccountId,BenefInstId);
             // insert into db to log purpose 
             jdbcRemmitance.insertCreateRemmitance(id, stan, TransDateTime, InstID, AccountID, Name,
                     Address, BirthDate, PhoneNumber, Occupation, Citizenship, IDNumber, FundResource, RegencyCode, Data);
@@ -153,25 +154,25 @@ public class CreateAccountEnhance implements HttpHandler{
                 line = (Element) Address1.item(0);
                 senderAddress = getCharacterDataFromElement(line);
 
-                NodeList CountryCode1 = element.getElementsByTagName("CountryCode");
-                line = (Element) CountryCode1.item(0);
-                senderCountryCode = getCharacterDataFromElement(line);
+//                NodeList CountryCode1 = element.getElementsByTagName("CountryCode");
+//                line = (Element) CountryCode1.item(0);
+//                senderCountryCode = getCharacterDataFromElement(line);
 
                 NodeList BirthDate1 = element.getElementsByTagName("BirthDate");
                 line = (Element) BirthDate1.item(0);
                 senderBirthDate = getCharacterDataFromElement(line);
 
-                NodeList BirthPlace1 = element.getElementsByTagName("BirthPlace");
-                line = (Element) BirthPlace1.item(0);
-                senderBirthPlace = getCharacterDataFromElement(line);
+//                NodeList BirthPlace1 = element.getElementsByTagName("BirthPlace");
+//                line = (Element) BirthPlace1.item(0);
+//                senderBirthPlace = getCharacterDataFromElement(line);
 
                 NodeList PhoneNumber1 = element.getElementsByTagName("PhoneNumber");
                 line = (Element) PhoneNumber1.item(0);
                 senderPhoneNumber = getCharacterDataFromElement(line);
 
-                NodeList Email1 = element.getElementsByTagName("Email");
-                line = (Element) Email1.item(0);
-                senderEmail = getCharacterDataFromElement(line);
+//                NodeList Email1 = element.getElementsByTagName("Email");
+//                line = (Element) Email1.item(0);
+//                senderEmail = getCharacterDataFromElement(line);
 
                 NodeList Occupation1 = element.getElementsByTagName("Occupation");
                 line = (Element) Occupation1.item(0);
@@ -198,29 +199,29 @@ public class CreateAccountEnhance implements HttpHandler{
                 line = (Element) InstID1.item(1);
                 benefInstID1 = getCharacterDataFromElement(line);
 
-                NodeList Name1 = element.getElementsByTagName("Name");
-                line = (Element) Name1.item(1);
-                benefName1 = getCharacterDataFromElement(line);
-
-                NodeList Relationship1 = element.getElementsByTagName("Relationship");
-                line = (Element) Relationship1.item(1);
-                benefRelationship1 = getCharacterDataFromElement(line);
+//                NodeList Name1 = element.getElementsByTagName("Name");
+//                line = (Element) Name1.item(1);
+//                benefName1 = getCharacterDataFromElement(line);
+//
+//                NodeList Relationship1 = element.getElementsByTagName("Relationship");
+//                line = (Element) Relationship1.item(1);
+//                benefRelationship1 = getCharacterDataFromElement(line);
 
                 NodeList RegencyCode1 = element.getElementsByTagName("RegencyCode");
                 line = (Element) RegencyCode1.item(0);
                 benefRegencyCode = getCharacterDataFromElement(line);
 
-                NodeList benefAddress1 = element.getElementsByTagName("Address");
-                line = (Element) benefAddress1.item(1);
-                benefAddresss1 = getCharacterDataFromElement(line);
-
-                NodeList ProvCode1 = element.getElementsByTagName("ProvCode");
-                line = (Element) ProvCode1.item(0);
-                benefProvCode = getCharacterDataFromElement(line);
-
-                NodeList benefIDNumber1 = element.getElementsByTagName("IDNumber");
-                line = (Element) ProvCode1.item(1);
-                benefIDNumberr1 = getCharacterDataFromElement(line);
+//                NodeList benefAddress1 = element.getElementsByTagName("Address");
+//                line = (Element) benefAddress1.item(1);
+//                benefAddresss1 = getCharacterDataFromElement(line);
+//
+//                NodeList ProvCode1 = element.getElementsByTagName("ProvCode");
+//                line = (Element) ProvCode1.item(0);
+//                benefProvCode = getCharacterDataFromElement(line);
+//
+//                NodeList benefIDNumber1 = element.getElementsByTagName("IDNumber");
+//                line = (Element) ProvCode1.item(1);
+//                benefIDNumberr1 = getCharacterDataFromElement(line);
 
 //                    // parsing account no 2
                 NodeList code = element.getElementsByTagName("Code");

@@ -6454,3 +6454,419 @@ INFO: Incoming Notify message from handler - {
 "BenefAccountId":"001001",
 "BenefInstId":"003"
 }
+Aug 03, 2018 5:02:08 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "7",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 03, 2018 6:28:40 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "101",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 03, 2018 6:29:00 PM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.CreateRemittanceAccount</Name>
+</MethodID>
+<TransactionID>
+<STAN>000013</STAN>
+<TransDateTime>20180803062840</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<Address>BANDUNG</Address>
+<CountryCode>ID</CountryCode>
+<BirthDate>19830106</BirthDate>
+<BirthPlace></BirthPlace>
+<PhoneNumber>0856787576</PhoneNumber>
+<Email>email </Email>
+<Occupation>PROGRAMMER</Occupation>
+<Citizenship>INDONESIA</Citizenship>
+<IDNumber>001001001</IDNumber>
+<FundResource>SALARY</FundResource>
+</SenderData>
+<BeneficiaryData>
+<Acc01>
+<AccountID>001001</AccountID>
+<InstID>003</InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode>AKK</RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc01>
+<Acc02>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc02>
+<Acc03>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc03>
+<Acc04>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc04>
+<Acc05>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc05>
+</BeneficiaryData>
+<Signature>
+<Data>c0268131c9e70063e13088d5b594f204f513118942d1cbd39b91d8f1bc2cf44c8f08776a009fde690e11b166ead8d977e97543721ab867eec39fce722fc343bcf287abe7c95a87442880dbe8d090ac7f74531cb677243bb96f3e326e2180d63b47d26f9149f1363d5d155065f25ce9e1d33e62e125da4c3159986306118f90dd0b843a7576a13a9b140ba5ccac3a51a63bce3f964e0f57cfdce45bd9c191a538d9f209565a9a53383964d3150954f07b6b8ec808f220451c3555f14c9f8af627c6bebf363445164cdd145922ef30265f41d37024624447a1b80e4083dffad8ea61b49177d72d0bedc065c7609395c129cec145acd0acca1694928e8b2ae2d78e</Data>
+</Signature>
+</MethodCall>
+Aug 03, 2018 6:30:22 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "102",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 03, 2018 6:30:31 PM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.CreateRemittanceAccount</Name>
+</MethodID>
+<TransactionID>
+<STAN>000014</STAN>
+<TransDateTime>20180803063021</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<Address>BANDUNG</Address>
+<CountryCode>ID</CountryCode>
+<BirthDate>19830106</BirthDate>
+<BirthPlace></BirthPlace>
+<PhoneNumber>0856787576</PhoneNumber>
+<Email>email </Email>
+<Occupation>PROGRAMMER</Occupation>
+<Citizenship>INDONESIA</Citizenship>
+<IDNumber>001001001</IDNumber>
+<FundResource>SALARY</FundResource>
+</SenderData>
+<BeneficiaryData>
+<Acc01>
+<AccountID>001001</AccountID>
+<InstID>003</InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode>AKK</RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc01>
+<Acc02>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc02>
+<Acc03>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc03>
+<Acc04>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc04>
+<Acc05>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc05>
+</BeneficiaryData>
+<Signature>
+<Data>078e21d622aaf99834c6c5fd92013b660852d496a58d0ac4ea13a6da2eb252cdd2f1b5908fe025a4a71f2fe1b132bc12209fb2ff311260b6cb20168232a3645d5710e04ffed3e2145224b2f5c4b39cfe8696892618a381755d351aee9505a1b9d6c127634bfc5e80e66038e4efb697ec0457a5d733f7e0b27836d0f2c73c895055f35ee88f927034584a891bf9f0ec9fabedad30de6a5de8ba02bd2e4d51a8bd0e7f8ebfbd80709134d0e8c489ca0bd272601d3b62a2c07171809b65e380eac65c88f536e237f5f015a6e5fb556be162fa2be819424fdb034c577bcb6a5309b8b83daf1523a573ce2954665a9df8ab1111f1b6bd57c0e276578172853e9f3160</Data>
+</Signature>
+</MethodCall>
+Aug 03, 2018 6:30:55 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "103",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 03, 2018 6:31:06 PM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.CreateRemittanceAccount</Name>
+</MethodID>
+<TransactionID>
+<STAN>000015</STAN>
+<TransDateTime>20180803063055</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<Address>BANDUNG</Address>
+<CountryCode>ID</CountryCode>
+<BirthDate>19830106</BirthDate>
+<BirthPlace></BirthPlace>
+<PhoneNumber>0856787576</PhoneNumber>
+<Email>email </Email>
+<Occupation>PROGRAMMER</Occupation>
+<Citizenship>INDONESIA</Citizenship>
+<IDNumber>001001001</IDNumber>
+<FundResource>SALARY</FundResource>
+</SenderData>
+<BeneficiaryData>
+<Acc01>
+<AccountID>001001</AccountID>
+<InstID>003</InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode>AKK</RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc01>
+<Acc02>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc02>
+<Acc03>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc03>
+<Acc04>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc04>
+<Acc05>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc05>
+</BeneficiaryData>
+<Signature>
+<Data>33ce61263273d39d6bd104618ad244af007a63d57babd2806aca60aa206cc1c6133164d66630ec929e5176f115ada0489aad4b14645ab78f6ba05dbabcdd7e4fb4c5891fdce1fb09940af00999bf4bf9816edf420a83dc43c9346ea75d29771695cde85ab13765c56778c0f3935bbc594d19a456b010f33d3b33b125c533f7ccbf6a19958a5740c5f9340f978f1a7d1e906803591e3090ca56e91a75006b174c5019d90bbdbe1566dc72e6b361a8375216b0dba3172f602b05e4ccafbad42f2eac911cd48b17f7a4894293727b56da71be55098058ef12199a22158105e7b0e316a798613ce814012ac868b42b904f381f6fab89bcd7510832afbf0207f90a58</Data>
+</Signature>
+</MethodCall>
+Aug 03, 2018 6:32:12 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming Notify message from handler - {
+"id" : "104",
+"InstID":"000021",
+"AccountID":"1230402012",
+"CountryCode" : "ID",
+"Name":"TESTT",
+"Address" : "BANDUNG",
+"BirthDate":"19830106",
+"PhoneNumber":"0856787576",
+"Occupation":"PROGRAMMER",
+"Citizenship":"INDONESIA",
+"IDNumber":"001001001",
+"FundResource":"SALARY",
+"RegencyCode"  :"AKK",
+"BenefAccountId":"001001",
+"BenefInstId":"003"
+}
+Aug 03, 2018 6:32:23 PM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.CreateRemittanceAccount</Name>
+</MethodID>
+<TransactionID>
+<STAN>000016</STAN>
+<TransDateTime>20180803063212</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<Address>BANDUNG</Address>
+<CountryCode>ID</CountryCode>
+<BirthDate>19830106</BirthDate>
+<BirthPlace></BirthPlace>
+<PhoneNumber>0856787576</PhoneNumber>
+<Email>email </Email>
+<Occupation>PROGRAMMER</Occupation>
+<Citizenship>INDONESIA</Citizenship>
+<IDNumber>001001001</IDNumber>
+<FundResource>SALARY</FundResource>
+</SenderData>
+<BeneficiaryData>
+<Acc01>
+<AccountID>001001</AccountID>
+<InstID>003</InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode>AKK</RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc01>
+<Acc02>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc02>
+<Acc03>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc03>
+<Acc04>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc04>
+<Acc05>
+<AccountID></AccountID>
+<InstID></InstID>
+<Name></Name>
+<Relationship></Relationship>
+<RegencyCode></RegencyCode>
+<Address></Address>
+<ProvCode></ProvCode>
+<IDNumber></IDNumber>
+</Acc05>
+</BeneficiaryData>
+<Signature>
+<Data>b082cbff1fbc64c11a129c6e90c5ebbf7c332f8f1614793c0a15bd1679ec5b05d51d8de9153fa84f5bbe87fce82eeb9fbfb7520ea14fcd9c2b1a26bb8ca0012a2c5b0672c081b2aa5f90f564dc5545e17ccbfbb1a6bbe14c080ba99006588b9c2a24f487c4db0ec4257ad19b609015f8c8e4d3dee1ceea80704f876bb68cb760d548c6f3c5dc7ba387a1aa51692ca1c2777180094e254f9fd9d171b37b2944ead998c52e71a6e04bf02697ed83883f052ac9ee69e01154d177eabbb1a09ef0bef1ef395ac3281c1c674721c2cb00c709ecf50dbba2e1d559681b36cfc4f622506a52994307bd0c264ed2e59240fd736e8de164273a24117f4a14ee4edb559214</Data>
+</Signature>
+</MethodCall>
+Aug 03, 2018 6:32:47 PM GTAgw.MyLogger sendtoLog
+INFO: json Response - {"senderAddress":"BANDUNG","senderPhoneNumber":"0856787576","benefRelationship":null,"benefName":null,"benefAccountID":"001001","trxTransDateTime":"20180803061806","senderName":"TESTT","trxSTAN":"000074","senderEmail":null,"benefRegencyCode":"AKK","senderCountryCode":null,"senderBirthDate":"19830106","benefIDNumberr1":null,"Data":"23c697a5ca2bdff20ec84d74eccdf7c3eb62ef27ab38101f8589a686d9daa1a0d57a919c8d2665c22efd8ee0492ff170a85fa4e434f4076d351d9d251016c2963747213bda3605988cb3c1e6d7373aaa8d733e1aa9888429a200775f4717ef37a0c940856f35c9fef2acb2569f265eaf3de5008865072dc1f4cf44943bc1b67e\t\t","benefProvCode":null,"ErrDescription":"success","senderAccountID":"1230402012","senderCitizenship":"INDONESIA","ErrCode":"00","trxInstID":"000021","senderIDNumber":"001001001","benefInstID":"003\t\t\t","benefAddresss1":null,"senderOccupation":"PROGRAMMER","senderFundResource":"SALARY"}

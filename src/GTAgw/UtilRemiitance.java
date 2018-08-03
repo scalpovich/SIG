@@ -535,7 +535,7 @@ public class UtilRemiitance {
       
         public static String signatureCreateAccount(String trxStan, String trxTransDateTime,
             String trxinstid,String senderAccountId ,String senderName, String senderAddress, String senderPhoneNumber,
-            String senderIdNumber
+            String senderIdNumber, String benefAccountid1, String benefAccountInstId1
     ) {
             StringBuffer sb = new StringBuffer(); 
             sb.append(trxStan); 
@@ -545,7 +545,9 @@ public class UtilRemiitance {
             sb.append(senderName); 
             sb.append(senderAddress); 
             sb.append(senderPhoneNumber); 
-            sb.append(senderIdNumber); 
+            sb.append(senderIdNumber);
+            sb.append(benefAccountid1); 
+            sb.append(benefAccountInstId1);
              
             String concat = sb.toString(); 
             

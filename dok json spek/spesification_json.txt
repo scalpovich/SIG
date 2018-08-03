@@ -1,18 +1,6 @@
 json createRemitance Account 
 http://localhost:9001/createAccount
 =====================================
-{
-"id": "must unique every request ", 
-"AccountID":"Account ID of the sender",
-"Name" : "Name of the sender.",
-"Address" : "Address of the sender.",
-"BirthDate":"BirthDate of the sender data ,Format : YYYYMMDD",
-"PhoneNumber":"PhoneNumber of the sender data",
-"Occupation":"Occupation",
-"Citizenship":"Citizenship",
-"IDNumber":"IDNumber",
-"FundResource":"FundResource",
-"RegencyCode"  : "RegencyCode",
 
 // change spek in json 
 {
@@ -31,7 +19,6 @@ http://localhost:9001/createAccount
 "RegencyCode"  :"AKK",
 "BenefAccountId":"001001",
 "BenefInstId":"003"
-}
 }
 =====================================
 json response createremmitanceaccount

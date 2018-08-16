@@ -79,7 +79,7 @@ public class CreateAccountEnhance implements HttpHandler{
             String input = buf.toString();
             JSONObject obj = new JSONObject(input);
             String TransDateTime = utilRem.transDateTime();
-            log.sendtoLog(Level.INFO, "Incoming Notify message from handler", input);
+            log.sendtoLog(Level.INFO, "Create Account Request ", input);
             String id = obj.getString("id");
             String InstID = obj.getString("InstID");
             String AccountID = obj.getString("AccountID");

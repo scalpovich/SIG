@@ -6870,3 +6870,931 @@ INFO: construct Messaging request  - <?xml version="1.0"?>
 </MethodCall>
 Aug 03, 2018 6:32:47 PM GTAgw.MyLogger sendtoLog
 INFO: json Response - {"senderAddress":"BANDUNG","senderPhoneNumber":"0856787576","benefRelationship":null,"benefName":null,"benefAccountID":"001001","trxTransDateTime":"20180803061806","senderName":"TESTT","trxSTAN":"000074","senderEmail":null,"benefRegencyCode":"AKK","senderCountryCode":null,"senderBirthDate":"19830106","benefIDNumberr1":null,"Data":"23c697a5ca2bdff20ec84d74eccdf7c3eb62ef27ab38101f8589a686d9daa1a0d57a919c8d2665c22efd8ee0492ff170a85fa4e434f4076d351d9d251016c2963747213bda3605988cb3c1e6d7373aaa8d733e1aa9888429a200775f4717ef37a0c940856f35c9fef2acb2569f265eaf3de5008865072dc1f4cf44943bc1b67e\t\t","benefProvCode":null,"ErrDescription":"success","senderAccountID":"1230402012","senderCitizenship":"INDONESIA","ErrCode":"00","trxInstID":"000021","senderIDNumber":"001001001","benefInstID":"003\t\t\t","benefAddresss1":null,"senderOccupation":"PROGRAMMER","senderFundResource":"SALARY"}
+Aug 10, 2018 9:26:39 PM GTAgw.MyLogger sendtoLog
+INFO:  Transfer Inquiry  - {
+"id" : "7",
+"instid":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 10, 2018 9:26:39 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming remmitance transfer inquiry message - {
+"id" : "7",
+"instid":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 10, 2018 9:26:41 PM GTAgw.MyLogger sendtoLog
+INFO: remmitance transfer inquiry message - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Inquiry.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000011</STAN>
+<TransDateTime>20180810092639</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180810092639</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>6b57bfa0549d342f777545a4849b3b2a2655a67a8c4bd1b851b379ff31402c02918b3da30a93d184c0e2fcb975872c62a5f8676a398e06a74150c758d53057b58334e2df70ebdaa7bccaaed584945c583a0fc218f94a5a2d3f51729ac22efdc5f3e25cdac4c0bc5fc51b28b24782eea7ae19b7019b1c84d614037b9d2b3d069910cf44199a16fb42110425840d41c4d71f5f868488cd37694ca71efcaa680b0c3927a5bcc614dcbbbabf63de1465083200b0033a87635cd252bbe040b0719845b9623d9500076dcc7994c15919bdd47fd5593aa991786aebb4751020cad0f069abb371ce445c223a8d288d6f583685f6b2606e0d560033b0fbae93bffbe03ab9</Data>
+</Signature>
+</MethodCall>
+Aug 10, 2018 9:29:49 PM GTAgw.MyLogger sendtoLog
+INFO:  Transfer Inquiry  - {
+"id" : "7",
+"instid":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 10, 2018 9:29:49 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming remmitance transfer inquiry message - {
+"id" : "7",
+"instid":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 10, 2018 9:29:49 PM GTAgw.MyLogger sendtoLog
+INFO: remmitance transfer inquiry message - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Inquiry.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000011</STAN>
+<TransDateTime>20180810092949</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180810092949</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>c4b553129a6c4121925d01ca3f1c4242d64ad3a94c999332a838a6b5125a594af40c7b44e5b0cbd49be3bbfa8277223125609044c871138cdbd85a8af8f27f11a1ba6fbfa15f2cbaf430c63fdff85301c745baeb8199e1f5baff8b46d612d809c43e360b459c9e0bd39eb7fdfd5d54fd5a99152d223d9ab86c8305392083d6771287e0b0e71d711908d99085be8e4d093991cbad12ee03a84be0f2cc0b1647067da838adbbcc022f951542bd85a84e5fec1cd27aa13020e85ffb76891e8b5d746d3fb89eaa55b824d7292adef6cce9d2a7bad5c4f24bbac4596492149e3605583d810989372589e9fb105f261e8dad1c8994d79fef996650ae111d1aba979c4c</Data>
+</Signature>
+</MethodCall>
+Aug 10, 2018 9:30:21 PM GTAgw.MyLogger sendtoLog
+INFO:  Transfer Inquiry  - {
+"id" : "7",
+"instid":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 10, 2018 9:30:21 PM GTAgw.MyLogger sendtoLog
+INFO: Incoming remmitance transfer inquiry message - {
+"id" : "7",
+"instid":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 10, 2018 9:30:22 PM GTAgw.MyLogger sendtoLog
+INFO: remmitance transfer inquiry message - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Inquiry.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000011</STAN>
+<TransDateTime>20180810093021</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180810093021</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>4678bf27e046cc351bc073889f608791a80a8f583d3172a174bd532747c537420570b558e4771d15ebdd770c300b1b1e148c5460329d89922f8df0967c852a4fc211259a9f540980797c4601aed60bede77e21775bdd69e475e0fc89c53d5b7129765e22f23b0a46e24f6038d61369f2f2596c7d31c180591e272bc7a5a6e2481490cfc091f5f5e3c69cb3907161d354281ba6f4bcc60d4c579c58c714432f4c8c5f1ad008fdea5894965a9d38e1000674a98512722080fe2c15265392108d8ae1827331c1685083306995e1a6ebafd1f48b1db3e551945d1033309b65a7a0a3285e84ac9b754137717ad5d3ac677f2f181c681226f3ec459c356db611f66cf4</Data>
+</Signature>
+</MethodCall>
+Aug 10, 2018 9:30:38 PM GTAgw.MyLogger sendtoLog
+INFO: json Response trnsfer inquiry - {"senderRate":"1700","senderAmount":"170000","Description":"Success","benefName":"NATAL PANGESTU                ","CurrCode":"344","benefCustRefNumber":"1234567898765","Data":"38639bd60c50e4525e845fc203db497743ffeead6a88268afad40d0faed6bf3ced000801ce0adcb9e8280f0bb12fa7d86fefbd4a67a4e2bf5a90da21798f964303342a835b24ac0fa1bdef0eb556d6accc956f801716c6274bc3d5fd700ffe068ea579b0b8f6bb23ea48a7ee17eae08edd3198797a71ef56a6c326e82cb4cda7","benefAccountID":"003003003","benefPurposeCode":null,"Code":"00","trxTransDateTime":"20180810095808","senderAccountID":"1230402012","trxInstID":"000021","senderName":"TESTT","benefCurrCode":"360","trxSTAN":"000085","benefPurposeDesc":null,"benefInstID":"116","benefRegencyCode":"GRT","senderAreaCode":null,"benefAmount":"100"}
+Aug 16, 2018 9:33:31 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "14",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:34:01 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "14",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:34:37 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "14",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:34:39 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000017</STAN>
+<TransDateTime>20180816093437</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816093437</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>51c8152921d6a0cbaf2d59df3ba30154e6d9a2fae88dbc0ede628770e20cc0385590d3d4b3a2ed8d7e6b278b2726df4ac1c2ce8520aa3af4d90ad60aa99d7184f86970b3385c41b66330030eb1dd6eb77d5b4469249e436beed6786b585c53ec3a9aaca37e0c2adcf52334097b0ce361ce0cd5bf44f64d2e79e0ec263c3e92643e494457cf812051aea3d721150287b8e1020b2c154f4bdd20b07b2ad1b2f67a928a5c7930a43163ed02f20cac95a27f8e4e4a2e33d74b95e50f5f123342cb50e874dad3ccc6b757a0c16b981476adda5cd3a30fdea74ede7428b19e1bb9922db5f36b72ce170e475bc7a1f462b1566b66608f7d08a3e9c0ac656b4d58737a98</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:35:38 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "14",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:35:38 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000017</STAN>
+<TransDateTime>20180816093538</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816093538</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>31cbce1b74a2fdb1cbf19e457e8db770fe503e98c62fde8b85bf4c08ccf32f8f476b29882e624f0838bfb470fcb7eee590e43d5f22c5850f6d781e5b5b3beeda0c542719a72e3cf63b30071ebf77061dc8fc49635c7cdc31fb400c332342185bf7dbf264170cb59a8302068cce4e7e0ee355a4bf51e1fb729afdac604eb80c8bab17c77190e8f4a2b9c01034c9fb204ac9d69bf0baa31571816b35fb4fc794595c2d027e1a63ff4bedd7d26ea5d420e4888a943bfdad96585f4ee2701d4f4e4a3138ab75c1d6959b7622c76bcfe20bfedf74e64471dc32efe9030798405bb34a4b29dac74456e942bd72fa7e75b032ad5ae12453a17c0fadad9b3eafb10c2747</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:35:56 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "14",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:35:57 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000017</STAN>
+<TransDateTime>20180816093556</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816093556</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>bbf3493afa9901cde91cefa87f8486e58777e686b10b039211373917bf70ba028295598cf1302cf818a67d552313dfb3d7d7d25f6106608bc05f9d069c30d92e15401a578074d72175534d6f2e1498b4a57d44fe83eb36c7c2024b6517963cdd259acb8a866a47b34482594a1750a4f52cd36367758bfbd75ad273c2b308a8b96247416f4bacb5d2dd5ebf4115b7fe614c92915dd8b6aebc35494ae72ec59aba2edaa2dc5706adb9612e2558492e15d2e0c2e053a5bf26130b8a1e097d014fe03446891c904e0282fe778c0c392bc86117518da9f00d8f407ec0247d8baa08cabc46cf2ca3ecb1b6b3629c8ffa7e5bf34eec5541951748fd250d9980b3b48062</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:36:13 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "15",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:36:13 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000020</STAN>
+<TransDateTime>20180816093613</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816093613</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>53f29061d11cbddabcbf0df2b5b95d2d069a85d78e378ceed72bd66ec13ca61bd6cb2fe9c33e0ea3c3e95bbb9575344a34a1fc663491f3b7cec1cca72edd4e5e085f29403efca820664fff2d4c5010732f67c18807495938a796bb146fcdb5eb7b0396f156eaff8edfc54b66c04f4ee0f38502c570fac2b3d9cdb164ce26e00bc478c5ba9473a6a4a9896bbec7e290c9282f23a0afbf5f3c80785f0347794301926a3679dc42b8577e403f675e7f105229605ef6df0d75260eb6bbdf39aa1fd29ee92ca2e1bd778c928e61e1a6c3385901c70396856cdb5d9ffadc32c639f547209cde1136b886845b906801b57923c66a4703a49b981305896a9d4df1dd6e10</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:38:39 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "16",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:38:40 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000021</STAN>
+<TransDateTime>20180816093839</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816093839</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>6e159c1bd6f125229efd93dae325aa07755b35853957218a3a6f4d92c32b4a7b63f352666a89e1adb2d289cea99a1e964efe4d2a665e183bb2222babcc57702ebf2d7efb7da9a16de90b3c3cc2705d82d55ae6ee2de0f906d7cdd9a236f3d0aab87f423feaa56347a525c90340442f64ad8e6e5c5d608c89ef56b13c0781577d150b6da35f782b0d135194f49e5197a2cc3fa10fe702fb09ce62feabf696753fa7deb069afb963a8567c460223893b4541d5481d7f3c60aa655c20317d426d8a59e0d700231b1f6325ecd31e8dcba414969c0bd74ebecac3b5d5ad5a9ebedb7ec23dcc3c8232e7d0b264c6617130b7e991dc30d5a5bca5e2ed6fde994c460278</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:41:50 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "17",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:41:51 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000022</STAN>
+<TransDateTime>20180816094150</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816094150</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>18a6d0fbf202998212c21f7e325942859810aac05a22072a652e40d66d2a4e85e27a1d993e0e9ec45e9128573bee02d83ba3aa7f587906b9142d672b05d9a904de48adc6e49096a38844074883883d44389ac6753a23d6b26ad287672131dbc7ecb68ec55527a89332c155f1e062340a07dc3ec21d98d1cb158a9a8a4fb46b4094f9970be9e49036026c5b04813c179e3695cdb9e4d68eb16bee124dd7ff4be295dc02e9c706b04f0515bb4c08db2bd575e42a64a75d991268b65648ec8cef47e4863c101c0971e9e6efd1a413f90232ee7cf4593fbd5deb96208d5c29d40da1cdfb9b9a3e8688ea67df743af1f4ba3b4121c5cd17d17f686f90ef85574cb477</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:42:07 AM GTAgw.MyLogger sendtoLog
+INFO: json Response transfer - {"senderRate":null,"senderAmount":null,"Description":null,"benefName":null,"CurrCode":null,"benefCustRefNumber":null,"Data":null,"benefAccountID":null,"benefPurposeCode":null,"Code":null,"trxTransDateTime":null,"senderAccountID":null,"trxInstID":null,"senderName":null,"benefCurrCode":null,"trxSTAN":null,"benefPurposeDesc":null,"benefInstID":null,"benefRegencyCode":null,"senderAreaCode":null,"benefAmount":null}
+Aug 16, 2018 9:43:41 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "18",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:43:42 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000023</STAN>
+<TransDateTime>20180816094341</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816094341</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>d7a0b4f826e5c60c2a46d5e39bd6b6bf722b895d9dd034cabf75991c4c0dd19d1932b0c2ba1b5d4331677ac91ec02cd336790152a6beeb5bcefd192f5ce1dfe9822e56149a74a93483cfd62ce4f1b4527ff1cfcf0e3fd6d3313b25c75a059bdccf570a3614cc596b6b11f325395b9b567b2b8fb50463fd713e2c2f4b07f41acdb840c6e3d6af6a5fbe51e8c5b5268239d5c8a998f10214894645534b18343b7fe755c6506175f4989701e1e65684f49db74a33d27b4724b05796a03e3a7759d231497bd09eabc5709811ba7811263e7cac2afba89cef97c9cb18ef000f6789ab922620f4d4bfa9e50907398009f7ab399d67a793dc9f376320e7d48958255729</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:43:53 AM GTAgw.MyLogger sendtoLog
+INFO: json Response transfer - {"senderRate":null,"senderAmount":null,"Description":null,"benefName":null,"CurrCode":null,"benefCustRefNumber":null,"Data":null,"benefAccountID":null,"benefPurposeCode":null,"Code":null,"trxTransDateTime":null,"senderAccountID":null,"trxInstID":null,"senderName":null,"benefCurrCode":null,"trxSTAN":null,"benefPurposeDesc":null,"benefInstID":null,"benefRegencyCode":null,"senderAreaCode":null,"benefAmount":null}
+Aug 16, 2018 9:44:48 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "18",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:44:53 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000023</STAN>
+<TransDateTime>20180816094448</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816094448</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>4e22c6cb060a7f78b814f056982ea44b4b39e2938228005aa96b3a7c13c8b2cd09509cb937ab70346df2c72f156b4e2c1b5870c0f35e90994f6f56240a0c87ea7e28c34db33afa86e879a1bc7ef1349a16acdb39c9de22f3ab20ca577f23dc96fdd7accb686e6ffcc7a26c44f569f3f2a6d98eaba36c96c939d35d3008960c9d20f5f2a1d49ea6f134f28068c40e96fa69851e5a30439d5f59ee7be3f1bedee1415748ab20fad4173388d3d871e593323e41ff43078c4bd8148c9d171a1cb7f520a347f45bd50032fea7692d88b838b542903824d4cef0ee3675f6752c9d19f3bfdeb4a9931e7ff4dd38ca36780ae1c40df5cc2f46117a756445954de18f58d4</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:46:07 AM GTAgw.MyLogger sendtoLog
+INFO: Transfer Request  - {
+"id" : "19",
+"InstID":"000021",
+"ProcCode":"390000",
+"ChannelType":"6017",
+"RefNumber":"11223456",
+"TerminalID":"800",
+"CountryCode":"ID",
+"senderAccountID":"1230402012",
+"senderName":"TESTT",
+"senderCurrCode":"344",
+"senderAmount":"170000",
+"senderRate":"1700",
+"senderAreaCode":"114",
+"benefInstID":"116",
+"benefAccountID":"003003003",
+"benefCurrCode":"360",
+"benefAmount":"100",
+"benefCustRefNumber":"1234567898765",
+"benefName":"Natal Pangestu",
+"benefRegencyCode":"GRT",
+"benefPurposeCode":"3",
+"benefPurposeDesc":"Other"
+}
+Aug 16, 2018 9:46:08 AM GTAgw.MyLogger sendtoLog
+INFO: construct Messaging request transfer  - <?xml version="1.0"?>
+<MethodCall>
+<MethodID>
+<Name>Transfer.Artajasa.ATMBTransfer</Name>
+</MethodID>
+<TransactionID>
+<STAN>000025</STAN>
+<TransDateTime>20180816094607</TransDateTime>
+<InstID>000021</InstID>
+</TransactionID>
+<TransactionInfo>
+<ProcCode>390000</ProcCode>
+<ChannelType>6017</ChannelType>
+<RefNumber>11223456</RefNumber>
+<TerminalID>800</TerminalID>
+<CountryCode>ID</CountryCode>
+<LocalDateTime>20180816094607</LocalDateTime>
+</TransactionInfo>
+<SenderData>
+<AccountID>1230402012</AccountID>
+<Name>TESTT</Name>
+<CurrCode>344</CurrCode>
+<Amount>170000</Amount>
+<Rate>1700</Rate>
+<AreaCode>114</AreaCode>
+</SenderData>
+<BeneficiaryData>
+<InstID>116</InstID>
+<AccountID>003003003</AccountID>
+<CurrCode>360</CurrCode>
+<Amount>100</Amount>
+<CustRefNumber>1234567898765</CustRefNumber>
+<Name>Natal Pangestu</Name>
+<RegencyCode>GRT</RegencyCode>
+<PurposeCode>3</PurposeCode>
+<PurposeDesc>Other</PurposeDesc>
+</BeneficiaryData>
+<Signature>
+<Data>2bf12fc81f6625a88660380f70037a19df3cb8efc3f1f444d9908416356561067c7b2b3d454b746fec1286090960efe8ca94a44c379f1aae01bd2e3c38f488b884c6306abf4cd4225df2c6b2a5044e7c44148621f4854343cecaec0e5d5e1c6918151bed48a33157cf44259e6894f9403894e732a75789d8d8a0eb4d5b2d9ff8fb244d9754bfbd106bfebd0e7326a47e48242d871f30de448f771ad9f437d5b938cfd90c496b446bbd3c9eb77064604207347d332357054cb80f7f9aeab4673196e7011646728b0a296d5c95530d3f84376e82c84835e2733b91cac7665223d443ebccd99cea1a1c4b25aba003e01bc62067340cdeaca0c3d47d6635d5c78dee</Data>
+</Signature>
+</MethodCall>
+Aug 16, 2018 9:46:29 AM GTAgw.MyLogger sendtoLog
+INFO: json Response transfer - {"senderRate":"1700","senderAmount":"170000","Description":"Success","benefName":"Natal Pangestu","CurrCode":"344","benefCustRefNumber":"1234567898765","Data":"3d98c0b94308d3859111b89b8a3f4907be26f943a6acfe89783d47a9a2feb2f517c5680fcb720596dec312e981b5fc76e26428ee109206ebbc37b9a59cf6ceebe6add6075896e29054f0659209b73ce5292cbe0d00d469d6ff19a6a6cde0051adc54ba54d3f79397e6de20a285eb150a31d12173448eb58141cb6cde5da182c9","benefAccountID":"003003003","benefPurposeCode":null,"Code":"00","trxTransDateTime":"20180815113541","senderAccountID":"1230402012","trxInstID":"000021","senderName":"TESTT","benefCurrCode":"360","trxSTAN":"000098","benefPurposeDesc":null,"benefInstID":"116","benefRegencyCode":"GRT","senderAreaCode":null,"benefAmount":"100"}

@@ -53,10 +53,9 @@ public class TransferInquiryEnhance implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
         // url for prod
-        String url = ApplicationProperties.getUrlRemmitanceTrx();
-        //  String url = "http://localhost:1000/inquirytransfer";
-       
-
+       String url = ApplicationProperties.getUrlRemmitanceTrx();
+          //String url = "http://localhost:5000/api";
+     
         UtilRemiitance ur = new UtilRemiitance();
         try {
             isr = new InputStreamReader(t.getRequestBody(), "utf-8");
@@ -67,7 +66,7 @@ public class TransferInquiryEnhance implements HttpHandler {
                 buf.append((char) b);
             }
             String input = buf.toString();
-            System.out.println(input);
+            log.sendtoLog(Level.INFO, " Transfer Inquiry ", input);
             JSONObject obj = new JSONObject(input);
             log.sendtoLog(Level.INFO, "Incoming remmitance transfer inquiry message", input);
             String id = obj.getString("id");

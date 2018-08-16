@@ -79,9 +79,8 @@ class InquiryStatusEnhance implements HttpHandler {
                 buf.append((char) b);
             }
             String input = buf.toString();
-
             JSONObject obj = new JSONObject(input);
-            log.sendtoLog(Level.INFO, "Incoming inquiry status message", input);
+            log.sendtoLog(Level.INFO, "Inquiry Status ", input);
             String id = obj.getString("id");
             String InstID = obj.getString("InstID"); // code yang di pakai uniqe untuk inquiry dan transfer 
             String CountryCode = obj.getString("CountryCode");
@@ -223,6 +222,11 @@ class InquiryStatusEnhance implements HttpHandler {
                     respDescription2, trfCode2, trfDescription2, signData2);
 
             log.sendtoLog(Level.INFO, "json Response", response);
+            // send response 
+            t.sendResponseHeaders(200, response.length());
+            OutputStream os = t.getResponseBody();
+            os.write(response.toString().getBytes());
+            os.close();
         } catch (Exception e) {
             e.printStackTrace();
             String errorResp = UtilRemiitance.responseError("upps something error happen check console");
